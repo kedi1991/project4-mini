@@ -6,6 +6,7 @@ if __name__ == "__main__":
 
     def create_tables(self):
         with app.app_context():
+            set_pg
             db.create_all()
     create_tables(db)
     app.run(
